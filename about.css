@@ -1,0 +1,147 @@
+/* Custom Variables */
+:root {
+ --primary-color: #FFC107;
+ --secondary-color: #F7B500;
+ --dark-color: #2c3e50;
+ --light-color: #f8f9fa;
+ --text-color: #6c757d;
+ --heading-color: #343a40;
+}
+
+/* Global Reset & Base Styles */
+body {
+ font-family: 'Poppins', sans-serif;
+ color: var(--text-color);
+ background-color: var(--light-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+ color: var(--heading-color);
+}
+
+a {
+ text-decoration: none;
+ color: inherit;
+}
+
+/* Header & Navbar Styling */
+header .container-fluid {
+ max-width: 1400px;
+}
+
+header .nav-link {
+ color: var(--light-color);
+ font-weight: 500;
+ transition: color 0.3s;
+}
+
+header .nav-link:hover {
+ color: var(--primary-color);
+}
+
+.cart i {
+ color: var(--primary-color);
+ font-size: 1.4rem;
+}
+
+.cart .count {
+ background: var(--dark-color);
+ color: var(--primary-color);
+ font-size: 12px;
+ font-weight: bold;
+ padding: 0 5px;
+ line-height: 1.3;
+ border-radius: 50%;
+ position: absolute;
+ top: -6px;
+ right: -10px;
+}
+
+/* Hero Section Styling */
+.hero-section .lead {
+ max-width: 600px;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+.hero-section h1, .hero-section h3 {
+ color: var(--heading-color);
+}
+
+@media (min-width: 992px) {
+ .hero-section .lead {
+ margin-left: 0;
+ margin-right: 0;
+ }
+}
+
+/* About Company Section Specific Styles */
+.about-company-section .display-4 {
+ color: var(--heading-color);
+}
+
+/* General Section Styling */
+.lead {
+ max-width: 800px;
+}
+
+.social-icon-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   background-color: #e9ecef;
+   color: var(--dark-color);
+   border-radius: 50%;
+   transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon-link:hover {
+   background-color: var(--primary-color);
+   color: var(--dark-color);
+}
+
+/* This class should be added to the social icons in the footer and team section in HTML */
+.footer-social .social-icon-link {
+   background-color: var(--dark-color);
+   color: white;
+}
+
+.footer-social .social-icon-link:hover {
+   background-color: var(--primary-color);
+   color: var(--dark-color);
+}
+
+.get-direction i {
+ color: var(--primary-color);
+}
+
+.get-direction:hover {
+ color: var(--primary-color) !important;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+ header .d-flex.align-items-center {
+ justify-content: space-between;
+ }
+}
+
+/* Team Section Specific Styles */
+.team-member img {
+ width: 100px;
+ height: 100px;
+ object-fit: cover;
+}
+
+.team-member .social-icon-link {
+   background-color: var(--dark-color);
+   color: white;
+}
+
+.team-member .social-icon-link:hover {
+   background-color: var(--primary-color);
+}

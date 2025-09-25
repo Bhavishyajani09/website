@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Online Furniture Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <div class="container-fluid px-3 px-md-5">
+            <div class="d-flex align-items-center py-4">
+                <a href="index.html">
+                    <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" style="width: 140px">
+                </a>
+                <nav class="d-none d-lg-block ms-auto">
+                    <ul class="list-unstyled d-flex gap-4 m-0">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="product.html" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="room.html" class="text-white text-decoration-none">Rooms</a></li>
+                        <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="contactus.html" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="cart cart-icon d-none d-lg-block position-relative ms-4" style="cursor: pointer;">
+                    <i class="fa-solid fa-basket-shopping text-warning fs-4" style="cursor: pointer;"></i>
+                    <span class="count cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning">0</span>
+                </div>
+                <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
+                    <div class="cart-icon position-relative" style="cursor: pointer;">
+                        <i class="fa-solid fa-basket-shopping text-warning fs-4" style="cursor: pointer;"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning" style="font-size: 0.7rem;">0</span>
+                    </div>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                        <i class="fa-solid fa-bars text-white fs-4"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header bg-dark">
+            <a href="index.html">
+                <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" style="width: 120px">
+            </a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body bg-dark">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="room.html">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="py-3 py-md-5">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="product.html">Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="product-breadcrumb">Product</li>
+                </ol>
+            </nav>
+
+            <div class="row g-4 g-md-5">
+                <div class="col-md-6">
+                    <img id="product-image" src="" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h1 id="product-name" class="display-6 display-md-5 fw-bold mb-3"></h1>
+                    <h3 id="product-price" class="text-warning mb-4 fs-4 fs-md-3"></h3>
+                    <p id="product-description" class="text-secondary mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse eaque wisi molestie, mollis pharetra convallis exercitation, distinctio eu arcu fugit nibh donec exercitationem, quisque imperdiet mattis proident.
+                    </p>
+                    
+                    <div class="mb-4">
+                        <h5>Features</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-warning me-2"></i>Etiam eu tortor tempor, malesuada</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Nunc vitae erat sit amet neque varius consequat</li>
+                            <li><i class="fas fa-check text-warning me-2"></i>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-3 mb-4">
+                        <span class="fw-semibold">Quantity:</span>
+                        <div class="input-group" style="width: 140px;">
+                            <button class="btn btn-outline-secondary" type="button" id="decrease-qty">-</button>
+                            <input type="text" class="form-control text-center" value="1" id="quantity-input">
+                            <button class="btn btn-outline-secondary" type="button" id="increase-qty">+</button>
+                        </div>
+                    </div>
+
+                    <button id="add-to-cart" class="btn btn-warning btn-lg fw-bold w-100 w-sm-auto px-5 py-3 mb-3">
+                        <i class="fas fa-shopping-cart me-2"></i>ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+            <div class="row mt-4 mt-md-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button">Reviews (0)</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <div class="p-4">
+                                <h5>Features</h5>
+                                <p>Ut at ante diam. Vestibulum tincidunt lacus quis odio iaculis, nec iaculis ipsum hendrerit. Curabitur nec fringilla sem. Nullam at diam et ligula tincidunt luctus. Ut fringilla vitae orci eget suscipit. Etiam ultricies justo ac feugiat dignissim.</p>
+                                <ul>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Etiam eu tortor tempor, malesuada</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Nunc vitae erat sit amet neque varius consequat</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Lorem ipsum dolor sit amet</li>
+                                </ul>
+                                
+                                <h5 class="mt-4">Care Instructions</h5>
+                                <p>Ut at ante diam. Vestibulum tincidunt lacus quis odio iaculis, nec iaculis ipsum hendrerit.</p>
+                                <ul>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Etiam eu tortor tempor, malesuada</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Nunc vitae erat sit amet neque varius consequat</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Vivamus lobortis posuere ante</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Morbi nisl diam, cursus non ultricies</li>
+                                    <li><i class="fas fa-check text-warning me-2"></i>Lorem ipsum dolor sit amet</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <div class="p-4">
+                                <p>No reviews yet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="shopping-cart-popup" class="shopping-cart-popup">
+        <div class="cart-header">
+            <h4>Shopping Cart</h4>
+            <button id="close-cart-btn" class="btn-close" aria-label="Close"></button>
+        </div>
+        <div class="cart-items-container" id="popup-cart-items">
+            <div class="empty-cart text-center py-4">
+                <i class="fas fa-shopping-cart text-muted mb-3" style="font-size: 3rem;"></i>
+                <p class="text-muted">Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="fw-semibold">Subtotal:</h5>
+                <h5 id="cart-subtotal" class="fw-bold">$0.00</h5>
+            </div>
+            <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold">VIEW CART</a>
+            <a href="checkout.html" class="btn btn-dark w-100 fw-bold">CHECKOUT</a>
+        </div>
+    </div>
+
+    <div id="add-to-cart-notification" class="add-to-cart-notification"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="cart-common.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            if (productId) {
+                fetch('products.json')
+                    .then(response => response.json())
+                    .then(products => {
+                        const product = products.find(p => p.id == productId);
+                        if (product) {
+                            currentProduct = product;
+                            document.getElementById('product-name').textContent = product.name;
+                            document.getElementById('product-price').textContent = `$${product.price.toFixed(2)}`;
+                            document.getElementById('product-image').src = product.image;
+                            document.getElementById('product-image').alt = product.alt_text;
+                            document.getElementById('product-breadcrumb').textContent = product.name;
+                            document.getElementById('add-to-cart').setAttribute('data-product-id', product.id);
+                        }
+                    });
+            }
+
+            // Quantity controls
+            document.getElementById('decrease-qty').addEventListener('click', () => {
+                const input = document.getElementById('quantity-input');
+                const value = parseInt(input.value);
+                if (value > 1) input.value = value - 1;
+            });
+
+            document.getElementById('increase-qty').addEventListener('click', () => {
+                const input = document.getElementById('quantity-input');
+                input.value = parseInt(input.value) + 1;
+            });
+
+            let currentProduct = null;
+            
+            // Add to cart functionality
+            document.addEventListener('click', (e) => {
+                if (e.target.id === 'add-to-cart' && currentProduct) {
+                    const quantity = parseInt(document.getElementById('quantity-input').value);
+                    cartManager.addToCart(currentProduct, quantity);
+                }
+            });
+            
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "name": "Brown Living Room Sofa",
+    "category": "Living Room",
+    "price": 1200,
+    "image": "img/living-room-brown-sofa-300x300.png",
+    "alt_text": "Brown Living Room Sofa"
+  },
+  {
+    "id": 2,
+    "name": "Green Living Room Sofa",
+    "category": "Living Room",
+    "price": 1100,
+    "image": "img/living-room-green-sofa-300x300.png",
+    "alt_text": "Green Living Room Sofa"
+  },
+  {
+    "id": 3,
+    "name": "Wooden Coffee Table",
+    "category": "Living Room",
+    "price": 250,
+    "image": "img/wooden-console-table-300x300.png",
+    "alt_text": "Wooden Coffee Table"
+  },
+  {
+    "id": 4,
+    "name": "Stylish Floor Lamp",
+    "category": "Living Room",
+    "price": 120,
+    "image": "img/black-metal-lamp-300x300.png",
+    "alt_text": "Stylish Floor Lamp"
+  },
+  {
+    "id": 5,
+    "name": "King Size Master Bed",
+    "category": "Bedroom",
+    "price": 1450,
+    "image": "img/king-size-master-bedroom-300x300 (1).png",
+    "alt_text": "King Size Master Bed"
+  },
+  {
+    "id": 6,
+    "name": "Blue Comfy Fabric Chair",
+    "category": "Bedroom",
+    "price": 580,
+    "image": "img/single-blue-fabric-chair-1-300x300 (1).png",
+    "alt_text": "Blue Comfy Fabric Chair"
+  },
+  {
+    "id": 7,
+    "name": "Classic Wooden Wardrobe",
+    "category": "Bedroom",
+    "price": 1800,
+    "image": "img/wooden-console-table-300x300 (1).png",
+    "alt_text": "Classic Wooden Wardrobe"
+  },
+  {
+    "id": 8,
+    "name": "Modern Bedside Table",
+    "category": "Bedroom",
+    "price": 300,
+    "image": "img/wall-hanging-cabinet-300x300.png",
+    "alt_text": "Modern Bedside Table"
+  },
+  {
+    "id": 9,
+    "name": "White Kitchen Island",
+    "category": "Kitchen",
+    "price": 4800.50,
+    "image": "img/kitchen-island-set-300x300.png",
+    "alt_text": "White Kitchen Island"
+  },
+  {
+    "id": 10,
+    "name": "Brown Circle Stool",
+    "category": "Kitchen",
+    "price": 224,
+    "image": "img/brown-wooden-stool-300x300.png",
+    "alt_text": "Brown Circle Stool"
+  },
+  {
+    "id": 11,
+    "name": "Sleek Kitchen Cabinet",
+    "category": "Kitchen",
+    "price": 1150,
+    "image": "img/kitchen-furniture-cabinet-300x300.png",
+    "alt_text": "Sleek Kitchen Cabinet"
+  },
+  {
+    "id": 12,
+    "name": "Stainless Steel Refrigerator",
+    "category": "Kitchen",
+    "price": 2200,
+    "image": "img/bathroom-circle-mirror-300x300.png",
+    "alt_text": "Stainless Steel Refrigerator"
+  },
+  {
+    "id": 13,
+    "name": "Ceramic Oval Bathtub",
+    "category": "Bathroom",
+    "price": 1120,
+    "image": "img/cream-ceramic-oval-bathtub-300x300.png",
+    "alt_text": "Ceramic Oval Bathtub"
+  },
+  {
+    "id": 14,
+    "name": "Wooden Bathroom Stool",
+    "category": "Bathroom",
+    "price": 220,
+    "image": "img/wooden-stool-300x300.png",
+    "alt_text": "Wooden Bathroom Stool"
+  },
+  {
+    "id": 15,
+    "name": "Golden Ring Mirror",
+    "category": "Bathroom",
+    "price": 124,
+    "image": "img/bathroom-circle-mirror-300x300.png",
+    "alt_text": "Golden Ring Mirror"
+  },
+  {
+    "id": 16,
+    "name": "Modern Bathroom Vanity",
+    "category": "Bathroom",
+    "price": 950,
+    "image": "img/bathroom-wooden-table-300x300.png",
+    "alt_text": "Modern Bathroom Vanity"
+  },
+  {
+    "id": 17,
+    "name": "Beige Working Chair",
+    "category": "Home Office",
+    "price": 800,
+    "image": "img/working-chair-with-armrest-300x300.png",
+    "alt_text": "Beige Working Chair"
+  },
+  {
+    "id": 18,
+    "name": "Minimalist Desk Lamp",
+    "category": "Home Office",
+    "price": 265,
+    "image": "img/black-metal-lamp-300x300.png",
+    "alt_text": "Minimalist Desk Lamp"
+  },
+  {
+    "id": 19,
+    "name": "Wooden Writing Desk",
+    "category": "Home Office",
+    "price": 800,
+    "image": "img/wooden-console-table-300x300.png",
+    "alt_text": "Wooden Writing Desk"
+  },
+  {
+    "id": 20,
+    "name": "Elegant Egyptian Vase",
+    "category": "Home Office",
+    "price": 400,
+    "image": "img/egyptian-brown-vase-300x300.png",
+    "alt_text": "Elegant Egyptian Vase"
+  },
+  {
+    "id": 21,
+    "name": "Geometric Wall Art",
+    "category": "Decor",
+    "price": 75,
+    "image": "img/furniture-green-fabric-chair-300x300.png",
+    "alt_text": "Geometric Wall Art"
+  },
+  {
+    "id": 22,
+    "name": "Abstract Ceramic Figure",
+    "category": "Decor",
+    "price": 60,
+    "image": "img/bedroom-single-chair-300x300 (1).png",
+    "alt_text": "Abstract Ceramic Figure"
+  }
+]

@@ -1,0 +1,35 @@
+
+    /* New Sections Styling */
+    .room-detail {
+        background-color: #f8f9fa; 
+    }
+
+    .room-detail .room-content {
+        background-color: #fff;
+        position: relative;
+    }
+
+    /* Decorative yellow corner */
+    .room-detail .decorative-corner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #ffc107; /* Bootstrap 'warning' color */
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        z-index: 1;
+    }
+
+    /* Shop button styling */
+    .room-detail .btn-warning {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    /* Responsive adjustments for the new section */
+    @media (max-width: 991.98px) {
+        .room-detail .room-image img {
+            height: 300px;
+        }
+    }
