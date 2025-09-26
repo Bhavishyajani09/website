@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,57 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="bg-dark text-white">
+    <header class="bg-white border-bottom">
         <div class="container-fluid px-5">
             <div class="d-flex align-items-center py-4">
                 <a href="index.html">
-                    <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" style="width: 140px" />
+                    <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
                 </a>
                 <nav class="d-none d-lg-block ms-auto">
                     <ul class="list-unstyled d-flex gap-4 m-0">
-                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                        <li><a href="product.html" class="text-white text-decoration-none">Products</a></li>
-                        <li><a href="room.html" class="text-white text-decoration-none">Rooms</a></li>
-                        <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
-                        <li><a href="contactus.html" class="text-white text-decoration-none">Contact Us</a></li>
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="product.html" class="text-muted text-decoration-none">Products</a></li>
+                        <li><a href="room.html" class="text-muted text-decoration-none">Rooms</a></li>
+                        <li><a href="aboutus.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="contactus.html" class="text-muted text-decoration-none">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="cart d-none d-lg-block position-relative ms-4 cart-icon">
                     <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
-                    <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning cart-count">0</span>
+                    <span
+                        class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
                 </div>
                 <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
                     <div class="cart-icon">
                         <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
-                        <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning cart-count">0</span>
+                        <span
+                            class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
                     </div>
-                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <i class="fa-solid fa-bars text-white fs-4"></i>
+                    <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars text-muted fs-4"></i>
                     </button>
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="product.html">Products</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="room.html">Rooms</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="room.html">Rooms</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="aboutus.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="contactus.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -89,102 +96,118 @@
             <div class="col-lg-4">
                 <div class="bg-white border rounded-3 p-4">
                     <h5 class="fw-bold mb-4">Cart Totals</h5>
-                    
+
                     <div class="d-flex justify-content-between mb-3">
                         <span class="text-muted">Subtotal</span>
                         <span class="fw-bold" id="cart-subtotal">$674.25</span>
                     </div>
-                    
+
                     <hr>
-                    
+
                     <div class="d-flex justify-content-between mb-4">
                         <span class="fw-bold">Total</span>
                         <span class="fw-bold" id="cart-total">$674.25</span>
                     </div>
-                    
+
                     <div class="mb-4">
                         <p class="text-muted mb-2">Have a coupon?</p>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter referral code" id="referral-code">
+                            <input type="text" class="form-control" placeholder="Enter referral code"
+                                id="referral-code">
                             <button class="btn btn-outline-secondary" type="button" id="apply-code">Apply</button>
                         </div>
                     </div>
-                    
-                    <a href="checkout.html" class="btn btn-warning w-100 fw-bold py-3 mb-3 text-decoration-none text-center d-block" style="font-size: 1.1rem; letter-spacing: 1px;">
+
+                    <a href="checkout.html"
+                        class="btn btn-warning w-100 fw-bold py-3 mb-3 text-decoration-none text-center d-block"
+                        style="font-size: 1.1rem; letter-spacing: 1px;">
                         CHECKOUT
                     </a>
                 </div>
-                
+
 
             </div>
         </div>
     </div>
 
-    <footer class="bg-dark text-white py-5">
-        <div class="container">
-            <div class="row g-4 pb-4 border-bottom border-secondary">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="footer-info text-center text-lg-start">
-                        <a href="index.html" class="logo d-block mb-3">
-                            <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" class="kayuu-logo" />
-                        </a>
-                        <p class="text-secondary mb-1">3538 Torrance Blvd, Torrance, CA 90503, USA</p>
-                        <p class="text-secondary mb-1">+1 123 456 7890</p>
-                        <p class="text-secondary mb-1">info@example.com</p>
-                        <a href="#" class="store-link text-warning d-inline-block mt-3 fw-bold">Visit Our Store</a>
-                    </div>
+    <footer style="background-color: #000000; color: #ffffff; padding: 40px 20px;">
+        <div class="container-fluid">
+            <div class="row justify-content-between" style="padding-bottom: 25px; margin-bottom: 20px;">
+                <div class="col-lg-3 col-md-6 mb-3" style="padding-left: 20px; padding-right: 20px;"> <img
+                        src="img/kayuu-logo-white.svg" alt="KAYUU" style="width: 100px; margin-bottom: 15px;" />
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">3538 Torrance
+                        Blvd, Torrance, CA 90503, USA</p>
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">+1 123 456 7890
+                    </p>
+                    <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 10px;">info@example.com
+                    </p> <a href="#"
+                        style="color: #cccccc; font-size: 14px; font-weight: 600; text-decoration: none;">Visit Our
+                        Store</a>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="fs-5 fw-bold text-uppercase mb-3">Useful Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
-                        <li><a href="product.html" class="text-secondary text-decoration-none">Products</a></li>
-                        <li><a href="room.html" class="text-secondary text-decoration-none">Rooms</a></li>
-                        <li><a href="aboutus.html" class="text-secondary text-decoration-none">About Us</a></li>
-                        <li><a href="contactus.html" class="text-secondary text-decoration-none">Contact Us</a></li>
+                <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 80px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Useful Links
+                    </h5>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px;"><a href="index.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home</a></li>
+                        <li style="margin-bottom: 6px;"><a href="product.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Products</a></li>
+                        <li style="margin-bottom: 6px;"><a href="room.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Rooms</a></li>
+                        <li style="margin-bottom: 6px;"><a href="aboutus.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">About Us</a></li>
+                        <li style="margin-bottom: 6px;"><a href="contactus.html"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3 col-lg-2">
-                    <h5 class="fs-5 fw-bold text-uppercase mb-3">Rooms</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-secondary text-decoration-none">Living Room</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Bedroom</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Kitchen</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Bath Room</a></li>
-                        <li><a href="#" class="text-secondary text-decoration-none">Home Office</a></li>
+                <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 60px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Rooms</h5>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Living Room</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bedroom</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Kitchen</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bath Room</a></li>
+                        <li style="margin-bottom: 6px;"><a href="#"
+                                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home Office</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="footer-social text-center text-lg-start">
-                        <h5 class="fs-5 fw-bold text-uppercase mb-3">Stay In Touch</h5>
-                        <p class="text-secondary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-2">
-                            <a href="#" class="social-icon-link"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon-link"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#" class="social-icon-link"><i class="fa-brands fa-youtube"></i></a>
-                            <a href="#" class="social-icon-link"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
+                <div class="col-lg-4 col-md-12 mb-3" style="padding-left: 100px; padding-right: 20px;">
+                    <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Stay In Touch
+                    </h5>
+                    <p
+                        style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 15px; max-width: 300px;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div style="display: flex; gap: 15px;"> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                                class="fa-brands fa-facebook-f"></i></a> <a href="#"
+                            style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-twitter"></i></a> <a
+                            href="#" style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" style="color: #cccccc; font-size: 18px;"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 text-center text-secondary">
-                <p class="mb-0">Copyright &copy; 2025 Online Furniture Store</p>
-                <p class="mb-0">Powered by Online Furniture Store</p>
-            </div>
+        </div>
+        <div
+            style="border-top: 1px solid #444; margin: 20px 0 0 0; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; text-align: center;">
+            <p style="color: #cccccc; font-size: 14px; margin: 0;">Copyright © 2025 Online Furniture Store</p>
+            <p style="color: #cccccc; font-size: 14px; margin: 0;">Powered by Online Furniture Store</p>
         </div>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            
+
             // Update cart display
             function updateCartDisplay() {
                 const tbody = document.getElementById('cart-table-body');
                 const cartCount = document.querySelector('.cart .count');
-                
+
                 if (cart.length === 0) {
                     tbody.innerHTML = `
                         <tr>
@@ -200,14 +223,14 @@
                     cartCount.textContent = '0';
                     return;
                 }
-                
+
                 let html = '';
                 let subtotal = 0;
-                
+
                 cart.forEach(item => {
                     const itemTotal = item.price * item.quantity;
                     subtotal += itemTotal;
-                    
+
                     html += `
                         <tr class="border-bottom cart-item" data-id="${item.id}">
                             <td class="py-4">
@@ -229,39 +252,39 @@
                         </tr>
                     `;
                 });
-                
+
                 tbody.innerHTML = html;
                 document.getElementById('cart-subtotal').textContent = `$${subtotal.toFixed(2)}`;
                 document.getElementById('cart-total').textContent = `$${subtotal.toFixed(2)}`;
                 cartCount.textContent = cart.length;
             }
-            
+
             // Save cart to localStorage
             function saveCart() {
                 localStorage.setItem('cart', JSON.stringify(cart));
             }
-            
+
             // Event handlers
-            document.addEventListener('click', function(e) {
+            document.addEventListener('click', function (e) {
                 // Increase quantity
                 if (e.target.classList.contains('increase-qty')) {
                     const row = e.target.closest('.cart-item');
                     const productId = row.getAttribute('data-id');
                     const cartItem = cart.find(item => item.id == productId);
-                    
+
                     if (cartItem) {
                         cartItem.quantity++;
                         saveCart();
                         updateCartDisplay();
                     }
                 }
-                
+
                 // Decrease quantity - remove product if quantity becomes 0
                 if (e.target.classList.contains('decrease-qty')) {
                     const row = e.target.closest('.cart-item');
                     const productId = row.getAttribute('data-id');
                     const cartItem = cart.find(item => item.id == productId);
-                    
+
                     if (cartItem) {
                         if (cartItem.quantity > 1) {
                             cartItem.quantity--;
@@ -272,12 +295,12 @@
                         updateCartDisplay();
                     }
                 }
-                
+
 
             });
-            
+
             // Apply referral code
-            document.getElementById('apply-code').addEventListener('click', function() {
+            document.getElementById('apply-code').addEventListener('click', function () {
                 const code = document.getElementById('referral-code').value.trim();
                 if (code) {
                     if (code.toLowerCase() === 'save10') {
@@ -287,10 +310,11 @@
                     }
                 }
             });
-            
+
             // Initialize
             updateCartDisplay();
         });
     </script>
 </body>
+
 </html>

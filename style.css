@@ -34,7 +34,7 @@ html {
 /* --- Header & Navbar Styles --- */
 .hero {
   min-height: 100vh;
-  background-image: url("img/ChatGPT Image Sep 16, 2025, 12_33_04 PM.png");
+  background-image: url("img/ChatGPT\ Image\ Sep\ 16\,\ 2025\,\ 12_33_04\ PM.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,13 +177,43 @@ html {
 
 /* Product Card Styles */
 .product-item .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
   padding-bottom: 20px;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.product-item .card .product-image {
+  background-color: transparent !important;
 }
 
 .product-item:hover .card {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+  transform: translateY(-5px);
+}
+
+.product-grid {
+  gap: 0 !important;
+  margin: 0 !important;
+  row-gap: 0 !important;
+  column-gap: 0 !important;
+}
+
+.product-grid .col {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.product-item {
+  margin: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+.product-item .card {
+  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .product-name {
@@ -205,9 +235,11 @@ html {
 
 /* New: Responsive Product Card Image */
 .product-image img {
-  max-width: 100%;
-  height: auto;
+  width: 230px;
+  height: 252px;
   object-fit: cover;
+  margin: 0 auto;
+  display: block;
 }
 
 /* --- Additional Button Styling --- */
@@ -242,12 +274,13 @@ html {
 @media (min-width: 992px) {
   .sales-text-box {
     position: absolute;
-    right: 10% !important;
-    left: auto;
+    left: 10% !important;
+    right: auto;
     top: 50%;
     transform: translateY(-50%);
     width: 40%;
     padding: 3rem;
+    z-index: 10;
   }
 }
 
@@ -893,4 +926,24 @@ footer .list-unstyled li a:hover {
     .newsletter-promo .col-12 {
         padding: 1.5rem 1rem !important;
     }
+}
+
+/* Room Categories Styling */
+.room-card {
+    height: 500px !important;
+}
+
+.room-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.room-overlay {
+    z-index: 2;
 }

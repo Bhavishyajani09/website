@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,50 +11,54 @@
 </head>
 
 <body id="top">
-  <header class="bg-dark text-white">
+  <header class="bg-white border-bottom">
     <div class="container-fluid px-5">
       <div class="d-flex align-items-center py-4">
         <a href="index.html">
-          <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" style="width: 140px" />
+          <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
         </a>
         <nav class="d-none d-lg-block ms-auto">
           <ul class="list-unstyled d-flex gap-4 m-0">
-            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="product.html" class="text-white text-decoration-none">Products</a></li>
-            <li><a href="room.html" class="text-warning text-decoration-none">Rooms</a></li>
-            <li><a href="aboutus.html" class="text-white text-decoration-none">About Us</a></li>
-            <li><a href="contactus.html" class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+            <li><a href="product.html" class="text-muted text-decoration-none">Products</a></li>
+            <li><a href="room.html" class="text-warning text-decoration-none fw-bold">Rooms</a></li>
+            <li><a href="aboutus.html" class="text-muted text-decoration-none">About Us</a></li>
+            <li><a href="contactus.html" class="text-muted text-decoration-none">Contact Us</a></li>
           </ul>
         </nav>
         <div class="cart d-none d-lg-block position-relative ms-4 cart-icon">
           <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
-          <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning cart-count">0</span>
+          <span
+            class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
         </div>
         <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
           <div class="cart-icon">
             <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
-            <span class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning cart-count">0</span>
+            <span
+              class="count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark cart-count">0</span>
           </div>
-          <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <i class="fa-solid fa-bars text-white fs-4"></i>
+          <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <i class="fa-solid fa-bars text-muted fs-4"></i>
           </button>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="product.html">Products</a></li>
-        <li class="nav-item"><a class="nav-link active text-warning" aria-current="page" href="room.html">Rooms</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="aboutus.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="contactus.html">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="product.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active text-warning fw-bold" aria-current="page" href="room.html">Rooms</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="aboutus.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="contactus.html">Contact Us</a></li>
       </ul>
     </div>
   </div>
@@ -70,28 +75,24 @@
     </section>
 
     <section class="room-detail py-5">
-      <div class="container">
-        <div class="row g-0 align-items-center bg-white shadow-sm rounded-4 overflow-hidden">
-          <div class="col-12 col-lg-6">
-            <div class="room-image h-100">
-              <img src="img/living-room-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="A modern and elegant living room setting with a large window" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 position-relative">
-            <div class="room-content p-4 p-md-5">
-              <div class="decorative-corner"></div>
-              <h2 class="display-4 fw-bold mb-4">Living Room</h2>
-              <p class="text-secondary lh-lg mb-4">
+      <div class="container-fluid px-0">
+        <div class="position-relative" style="height: 80vh; min-height: 600px;">
+          <img src="img/living-room-img.jpg" class="w-100 h-100 object-fit-cover" alt="Living Room" />
+          <div class="position-absolute bottom-0 end-0 me-4">
+            <div class="bg-white p-5 shadow-lg" style="max-width: 450px;">
+              <div class="position-absolute top-0 start-0 bg-warning" style="width: 60px; height: 60px; clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+              <h2 class="display-6 fw-bold mb-3">Living Room</h2>
+              <p class="text-muted mb-4">
                 Massa cras egestas laoreet montes, dapibus eu sit etiam curabitur
                 faucibus habitasse lectus vestibulum leo, odio dolor quis
                 maecenas faucibus vulputate pharetra.
               </p>
-              <ul class="list-unstyled mb-4 features-list">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Nulla placerat viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Cursus viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Vitae interdum eget</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Risus tempus elementum</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Aliquet dignissim</span></li>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Nulla placerat viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Cursus viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Vitae interdum eget</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Risus tempus elementum</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Aliquet dignissim</li>
               </ul>
               <a href="#" class="btn btn-warning py-3 px-5 fw-bold text-dark">SHOP LIVING ROOM</a>
             </div>
@@ -101,34 +102,30 @@
     </section>
     <section class="products-section py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 product-grid" id="living-room-products">
-          </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 product-grid" id="living-room-products">
+        </div>
       </div>
     </section>
 
     <section class="room-detail py-5">
-      <div class="container">
-        <div class="row g-0 align-items-center bg-white shadow-sm rounded-4 overflow-hidden">
-          <div class="col-12 col-lg-6">
-            <div class="room-image h-100">
-              <img src="img/living-room-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="A cozy and minimalist bedroom with a king-size bed" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 position-relative">
-            <div class="room-content p-4 p-md-5">
-              <div class="decorative-corner"></div>
-              <h2 class="display-4 fw-bold mb-4">Bedroom</h2>
-              <p class="text-secondary lh-lg mb-4">
+      <div class="container-fluid px-0">
+        <div class="position-relative" style="height: 80vh; min-height: 600px;">
+          <img src="img/bedroom-img.jpg" class="w-100 h-100 object-fit-cover" alt="Bedroom" />
+          <div class="position-absolute bottom-0 end-0 me-4">
+            <div class="bg-white p-5 shadow-lg" style="max-width: 450px;">
+              <div class="position-absolute top-0 start-0 bg-warning" style="width: 60px; height: 60px; clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+              <h2 class="display-6 fw-bold mb-3">Bedroom</h2>
+              <p class="text-muted mb-4">
                 Massa cras egestas laoreet montes, dapibus eu sit etiam curabitur
                 faucibus habitasse lectus vestibulum leo, odio dolor quis
                 maecenas faucibus vulputate pharetra.
               </p>
-              <ul class="list-unstyled mb-4 features-list">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Nulla placerat viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Cursus viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Vitae interdum eget</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Risus tempus elementum</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Aliquet dignissim</span></li>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Nulla placerat viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Cursus viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Vitae interdum eget</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Risus tempus elementum</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Aliquet dignissim</li>
               </ul>
               <a href="#" class="btn btn-warning py-3 px-5 fw-bold text-dark">SHOP BEDROOM</a>
             </div>
@@ -138,34 +135,30 @@
     </section>
     <section class="products-section py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 product-grid" id="bedroom-products">
-          </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 product-grid" id="bedroom-products">
+        </div>
       </div>
     </section>
 
     <section class="room-detail py-5">
-      <div class="container">
-        <div class="row g-0 align-items-center bg-white shadow-sm rounded-4 overflow-hidden">
-          <div class="col-12 col-lg-6">
-            <div class="room-image h-100">
-              <img src="img/kitchen-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="A clean and spacious kitchen with a modern island" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 position-relative">
-            <div class="room-content p-4 p-md-5">
-              <div class="decorative-corner"></div>
-              <h2 class="display-4 fw-bold mb-4">Kitchen</h2>
-              <p class="text-secondary lh-lg mb-4">
+      <div class="container-fluid px-0">
+        <div class="position-relative" style="height: 80vh; min-height: 600px;">
+          <img src="img/kitchen-img.jpg" class="w-100 h-100 object-fit-cover" alt="Kitchen" />
+          <div class="position-absolute bottom-0 end-0 me-4">
+            <div class="bg-white p-5 shadow-lg" style="max-width: 450px;">
+              <div class="position-absolute top-0 start-0 bg-warning" style="width: 60px; height: 60px; clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+              <h2 class="display-6 fw-bold mb-3">Kitchen</h2>
+              <p class="text-muted mb-4">
                 Massa cras egestas laoreet montes, dapibus eu sit etiam curabitur
                 faucibus habitasse lectus vestibulum leo, odio dolor quis
                 maecenas faucibus vulputate pharetra.
               </p>
-              <ul class="list-unstyled mb-4 features-list">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Nulla placerat viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Cursus viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Vitae interdum eget</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Risus tempus elementum</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Aliquet dignissim</span></li>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Nulla placerat viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Cursus viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Vitae interdum eget</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Risus tempus elementum</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Aliquet dignissim</li>
               </ul>
               <a href="#" class="btn btn-warning py-3 px-5 fw-bold text-dark">SHOP KITCHEN</a>
             </div>
@@ -175,34 +168,30 @@
     </section>
     <section class="products-section py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 product-grid" id="kitchen-products">
-          </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 product-grid" id="kitchen-products">
+        </div>
       </div>
     </section>
 
     <section class="room-detail py-5">
-      <div class="container">
-        <div class="row g-0 align-items-center bg-white shadow-sm rounded-4 overflow-hidden">
-          <div class="col-12 col-lg-6">
-            <div class="room-image h-100">
-              <img src="img/bath-room-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="A bright and stylish bathroom with a large mirror" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 position-relative">
-            <div class="room-content p-4 p-md-5">
-              <div class="decorative-corner"></div>
-              <h2 class="display-4 fw-bold mb-4">Bathroom</h2>
-              <p class="text-secondary lh-lg mb-4">
+      <div class="container-fluid px-0">
+        <div class="position-relative" style="height: 80vh; min-height: 600px;">
+          <img src="img/bath-room-img.jpg" class="w-100 h-100 object-fit-cover" alt="Bathroom" />
+          <div class="position-absolute bottom-0 end-0 me-4">
+            <div class="bg-white p-5 shadow-lg" style="max-width: 450px;">
+              <div class="position-absolute top-0 start-0 bg-warning" style="width: 60px; height: 60px; clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+              <h2 class="display-6 fw-bold mb-3">Bathroom</h2>
+              <p class="text-muted mb-4">
                 Massa cras egestas laoreet montes, dapibus eu sit etiam curabitur
                 faucibus habitasse lectus vestibulum leo, odio dolor quis
                 maecenas faucibus vulputate pharetra.
               </p>
-              <ul class="list-unstyled mb-4 features-list">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Nulla placerat viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Cursus viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Vitae interdum eget</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Risus tempus elementum</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Aliquet dignissim</span></li>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Nulla placerat viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Cursus viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Vitae interdum eget</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Risus tempus elementum</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Aliquet dignissim</li>
               </ul>
               <a href="#" class="btn btn-warning py-3 px-5 fw-bold text-dark">SHOP BATHROOM</a>
             </div>
@@ -212,34 +201,30 @@
     </section>
     <section class="products-section py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 product-grid" id="bathroom-products">
-          </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 product-grid" id="bathroom-products">
+        </div>
       </div>
     </section>
 
     <section class="room-detail py-5">
-      <div class="container">
-        <div class="row g-0 align-items-center bg-white shadow-sm rounded-4 overflow-hidden">
-          <div class="col-12 col-lg-6">
-            <div class="room-image h-100">
-              <img src="img/home-office-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="A functional and inviting home office space" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 position-relative">
-            <div class="room-content p-4 p-md-5">
-              <div class="decorative-corner"></div>
-              <h2 class="display-4 fw-bold mb-4">Home Office</h2>
-              <p class="text-secondary lh-lg mb-4">
+      <div class="container-fluid px-0">
+        <div class="position-relative" style="height: 80vh; min-height: 600px;">
+          <img src="img/home-office-img.jpg" class="w-100 h-100 object-fit-cover" alt="Home Office" />
+          <div class="position-absolute bottom-0 end-0 me-4">
+            <div class="bg-white p-5 shadow-lg" style="max-width: 450px;">
+              <div class="position-absolute top-0 start-0 bg-warning" style="width: 60px; height: 60px; clip-path: polygon(0 0, 100% 0, 0 100%);"></div>
+              <h2 class="display-6 fw-bold mb-3">Home Office</h2>
+              <p class="text-muted mb-4">
                 Massa cras egestas laoreet montes, dapibus eu sit etiam curabitur
                 faucibus habitasse lectus vestibulum leo, odio dolor quis
                 maecenas faucibus vulputate pharetra.
               </p>
-              <ul class="list-unstyled mb-4 features-list">
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Nulla placerat viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Cursus viverra</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Vitae interdum eget</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Risus tempus elementum</span></li>
-                <li class="d-flex align-items-start mb-2"><i class="fa-solid fa-minus me-2 text-warning mt-1"></i><span>Aliquet dignissim</span></li>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Nulla placerat viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Cursus viverra</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Vitae interdum eget</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Risus tempus elementum</li>
+                <li class="d-flex align-items-center mb-2"><span class="bg-warning me-3" style="width: 20px; height: 2px;"></span>Aliquet dignissim</li>
               </ul>
               <a href="#" class="btn btn-warning py-3 px-5 fw-bold text-dark">SHOP HOME OFFICE</a>
             </div>
@@ -249,8 +234,8 @@
     </section>
     <section class="products-section py-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 product-grid" id="home-office-products">
-          </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 product-grid" id="home-office-products">
+        </div>
       </div>
     </section>
 
@@ -259,7 +244,8 @@
         <div class="row g-0">
           <div class="col-12 col-lg-6">
             <div class="promo-image h-100">
-              <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Person relaxing on a couch" />
+              <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                alt="Person relaxing on a couch" />
             </div>
           </div>
           <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-5 text-center text-lg-start">
@@ -267,7 +253,8 @@
             <h2 class="display-5 fw-bold mb-4">See The Latest Collection & Get Special Offer</h2>
             <form action="#" method="post" class="newsletter-form d-flex flex-column flex-sm-row">
               <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
-                <input type="email" name="email" class="form-control rounded-2 py-3" placeholder="Email address" required />
+                <input type="email" name="email" class="form-control rounded-2 py-3" placeholder="Email address"
+                  required />
               </div>
               <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">SUBSCRIBE</button>
             </form>
@@ -280,147 +267,157 @@
     </section>
   </main>
 
-  <footer class="bg-dark text-white py-5">
-    <div class="container">
-      <div class="row g-4 pb-4 border-bottom border-secondary">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="footer-info text-center text-lg-start">
-            <a href="#" class="logo d-block mb-3">
-              <img src="img/kayuu-logo-white.svg" alt="KAYUU logo" class="kayuu-logo" />
-            </a>
-            <p class="text-secondary mb-1">3538 Torrance Blvd, Torrance, CA 90503, USA</p>
-            <p class="text-secondary mb-1">+1 123 456 7890</p>
-            <p class="text-secondary mb-1">info@example.com</p>
-            <a href="#" class="store-link text-warning d-inline-block mt-3 fw-bold">Visit Our Store</a>
-          </div>
+  <footer style="background-color: #000000; color: #ffffff; padding: 40px 20px;">
+    <div class="container-fluid">
+      <div class="row justify-content-between" style="padding-bottom: 25px; margin-bottom: 20px;">
+        <div class="col-lg-3 col-md-6 mb-3" style="padding-left: 20px; padding-right: 20px;"> <img
+            src="img/kayuu-logo-white.svg" alt="KAYUU" style="width: 100px; margin-bottom: 15px;" />
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">3538 Torrance Blvd,
+            Torrance, CA 90503, USA</p>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">+1 123 456 7890</p>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 10px;">info@example.com</p> <a
+            href="#" style="color: #cccccc; font-size: 14px; font-weight: 600; text-decoration: none;">Visit Our
+            Store</a>
         </div>
-        <div class="col-6 col-md-3 col-lg-2">
-          <h5 class="fs-5 fw-bold text-uppercase mb-3">Useful Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-secondary text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Products</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Rooms</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">About Us</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+        <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 80px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Useful Links</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 6px;"><a href="index.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home</a></li>
+            <li style="margin-bottom: 6px;"><a href="product.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Products</a></li>
+            <li style="margin-bottom: 6px;"><a href="room.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Rooms</a></li>
+            <li style="margin-bottom: 6px;"><a href="aboutus.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">About Us</a></li>
+            <li style="margin-bottom: 6px;"><a href="contactus.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Contact</a></li>
           </ul>
         </div>
-        <div class="col-6 col-md-3 col-lg-2">
-          <h5 class="fs-5 fw-bold text-uppercase mb-3">Rooms</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-secondary text-decoration-none">Living Room</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Bedroom</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Kitchen</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Bath Room</a></li>
-            <li><a href="#" class="text-secondary text-decoration-none">Home Office</a></li>
+        <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 60px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Rooms</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Living Room</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bedroom</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Kitchen</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bath Room</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home Office</a></li>
           </ul>
         </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="footer-social text-center text-lg-start">
-            <h5 class="fs-5 fw-bold text-uppercase mb-3">Stay In Touch</h5>
-            <p class="text-secondary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-2">
-              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"><i class="fa-brands fa-youtube"></i></a>
-              <a href="#" class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-12 mb-3" style="padding-left: 100px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Stay In Touch</h5>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 15px; max-width: 300px;">Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div style="display: flex; gap: 15px;"> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-facebook-f"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-twitter"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-youtube"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-instagram"></i></a> </div>
         </div>
       </div>
-      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 text-center text-secondary">
-        <p class="mb-0">Copyright &copy; 2025 Online Furniture Store</p>
-        <p class="mb-0">Powered by Online Furniture Store</p>
-      </div>
+    </div>
+    <div
+      style="border-top: 1px solid #444; margin: 20px 0 0 0; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; text-align: center;">
+      <p style="color: #cccccc; font-size: 14px; margin: 0;">Copyright © 2025 Online Furniture Store</p>
+      <p style="color: #cccccc; font-size: 14px; margin: 0;">Powered by Online Furniture Store</p>
     </div>
   </footer>
 
 
-  
+
   <div id="shopping-cart-popup" class="shopping-cart-popup">
-      <div class="cart-header">
-          <h4>Shopping Cart</h4>
-          <button id="close-cart-btn" class="btn-close" aria-label="Close"></button>
+    <div class="cart-header">
+      <h4>Shopping Cart</h4>
+      <button id="close-cart-btn" class="btn-close" aria-label="Close"></button>
+    </div>
+    <div class="cart-items-container" id="popup-cart-items">
+      <div class="empty-cart text-center py-4">
+        <i class="fas fa-shopping-cart text-muted mb-3" style="font-size: 3rem;"></i>
+        <p class="text-muted">Your cart is empty</p>
       </div>
-      <div class="cart-items-container" id="popup-cart-items">
-          <div class="empty-cart text-center py-4">
-              <i class="fas fa-shopping-cart text-muted mb-3" style="font-size: 3rem;"></i>
-              <p class="text-muted">Your cart is empty</p>
-          </div>
+    </div>
+    <div class="cart-footer">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-semibold">Subtotal:</h5>
+        <h5 id="cart-subtotal" class="fw-bold">$0.00</h5>
       </div>
-      <div class="cart-footer">
-          <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="fw-semibold">Subtotal:</h5>
-              <h5 id="cart-subtotal" class="fw-bold">$0.00</h5>
-          </div>
-          <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold">VIEW CART</a>
-          <a href="checkout.html" class="btn btn-dark w-100 fw-bold">CHECKOUT</a>
-      </div>
+      <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold">VIEW CART</a>
+      <a href="checkout.html" class="btn btn-dark w-100 fw-bold">CHECKOUT</a>
+    </div>
   </div>
-  
+
   <div id="add-to-cart-notification" class="add-to-cart-notification"></div>
 
-    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row g-4 align-items-center">
-                        <div class="col-md-6 text-center">
-                            <img id="modalProductImage" src="" class="img-fluid rounded-4" alt="Product Image" />
-                        </div>
-                        <div class="col-md-6">
-                            <h2 id="modalProductName" class="fw-bold display-5"></h2>
-                            <h4 id="modalProductPrice" class="text-warning my-3"></h4>
-                            <p id="modalProductDescription" class="text-secondary lh-lg mb-4"></p>
-                            <div class="d-flex align-items-center gap-3 mt-4">
-                                <div class="input-group quantity-control">
-                                    <button class="btn btn-outline-secondary decrease-quantity" type="button" data-modal-id="modal-product-id">-</button>
-                                    <input type="text" class="form-control text-center" value="1" id="modalProductQuantity" />
-                                    <button class="btn btn-outline-secondary increase-quantity" type="button" data-modal-id="modal-product-id">+</button>
-                                </div>
-                                <button id="modalAddToCartBtn" class="btn btn-warning btn-lg fw-bold flex-grow-1">ADD TO CART</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center">
+              <img id="modalProductImage" src="" class="img-fluid rounded-4" alt="Product Image" />
+            </div>
+            <div class="col-md-6">
+              <h2 id="modalProductName" class="fw-bold display-5"></h2>
+              <h4 id="modalProductPrice" class="text-warning my-3"></h4>
+              <p id="modalProductDescription" class="text-secondary lh-lg mb-4"></p>
+              <div class="d-flex align-items-center gap-3 mt-4">
+                <div class="input-group quantity-control">
+                  <button class="btn btn-outline-secondary decrease-quantity" type="button"
+                    data-modal-id="modal-product-id">-</button>
+                  <input type="text" class="form-control text-center" value="1" id="modalProductQuantity" />
+                  <button class="btn btn-outline-secondary increase-quantity" type="button"
+                    data-modal-id="modal-product-id">+</button>
+                </div>
+                <button id="modalAddToCartBtn" class="btn btn-warning btn-lg fw-bold flex-grow-1">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="cart-common.js"></script>
   <script src="cart.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-        const productContainers = {
-            'Living Room': document.getElementById('living-room-products'),
-            'Bedroom': document.getElementById('bedroom-products'),
-            'Kitchen': document.getElementById('kitchen-products'),
-            'Bathroom': document.getElementById('bathroom-products'),
-            'Home Office': document.getElementById('home-office-products')
-        };
-        let allProducts = [];
+      const productContainers = {
+        'Living Room': document.getElementById('living-room-products'),
+        'Bedroom': document.getElementById('bedroom-products'),
+        'Kitchen': document.getElementById('kitchen-products'),
+        'Bathroom': document.getElementById('bathroom-products'),
+        'Home Office': document.getElementById('home-office-products')
+      };
+      let allProducts = [];
 
-        // Product Detail Modal elements
-        const productDetailModal = new bootstrap.Modal(document.getElementById('productDetailModal'));
-        const modalProductName = document.getElementById('modalProductName');
-        const modalProductImage = document.getElementById('modalProductImage');
-        const modalProductPrice = document.getElementById('modalProductPrice');
-        const modalProductDescription = document.getElementById('modalProductDescription');
-        const modalAddToCartBtn = document.getElementById('modalAddToCartBtn');
-        const modalQuantityInput = document.getElementById('modalProductQuantity');
+      // Product Detail Modal elements
+      const productDetailModal = new bootstrap.Modal(document.getElementById('productDetailModal'));
+      const modalProductName = document.getElementById('modalProductName');
+      const modalProductImage = document.getElementById('modalProductImage');
+      const modalProductPrice = document.getElementById('modalProductPrice');
+      const modalProductDescription = document.getElementById('modalProductDescription');
+      const modalAddToCartBtn = document.getElementById('modalAddToCartBtn');
+      const modalQuantityInput = document.getElementById('modalProductQuantity');
 
-        const formatPrice = (price) => {
-            return `$${price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
-        };
+      const formatPrice = (price) => {
+        return `$${price.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 })}`;
+      };
 
-        const createProductCard = (product) => {
-            return `
+      const createProductCard = (product) => {
+        return `
                 <div class="col product-item" data-id="${product.id}">
-                    <div class="card h-100 border-0 bg-light rounded-4 shadow-sm position-relative product-card-clickable" data-product-id="${product.id}" style="cursor: pointer;">
-                        <div class="product-image bg-light-subtle p-3 text-center">
+                    <div class="card h-100 border-0 bg-light shadow-sm position-relative product-card-clickable" data-product-id="${product.id}" style="cursor: pointer;">
+                        <div class="product-image p-3 text-center">
                             <img src="${product.image}" class="img-fluid" alt="${product.alt_text}" />
                         </div>
                         <div class="card-body text-center p-3">
@@ -439,90 +436,91 @@
                     </div>
                 </div>
             `;
-        };
-        
-        const renderProducts = (products, container) => {
-            container.innerHTML = '';
-            products.forEach(product => {
-                container.innerHTML += createProductCard(product);
-            });
-        };
+      };
 
-        fetch('products.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                allProducts = data;
-                data.forEach(product => {
-                    const container = productContainers[product.category];
-                    if (container) {
-                        container.innerHTML += createProductCard(product);
-                    }
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching products:', error);
-            });
-
-        // Product click events
-        document.addEventListener('click', (e) => {
-            // Quick View button - opens modal
-            if (e.target.classList.contains('view-detail-btn')) {
-                e.preventDefault();
-                const productId = e.target.getAttribute('data-product-id');
-                const product = allProducts.find(p => p.id == productId);
-                
-                if (product) {
-                    modalProductName.textContent = product.name;
-                    modalProductImage.src = product.image;
-                    modalProductImage.alt = product.alt_text;
-                    modalProductPrice.textContent = `$${product.price.toFixed(2)}`;
-                    modalProductDescription.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse eaque wisi molestie, mollis pharetra convallis exercitation, distinctio eu arcu fugit nibh donec exercitationem, quisque imperdiet mattis proident.";
-                    
-                    modalAddToCartBtn.setAttribute('data-product-id', product.id);
-                    document.querySelector('.quantity-control .decrease-quantity').setAttribute('data-id', product.id);
-                    document.querySelector('.quantity-control .increase-quantity').setAttribute('data-id', product.id);
-                    modalQuantityInput.value = 1;
-                    productDetailModal.show();
-                }
-            }
-            
-            // Add to cart button
-            if (e.target.classList.contains('add-to-cart-btn') || e.target.closest('.add-to-cart-btn')) {
-                e.preventDefault();
-                const productCard = e.target.closest('.product-item');
-                const productId = productCard.getAttribute('data-id');
-                const product = allProducts.find(p => p.id == productId);
-                
-                if (product) {
-                    cartManager.addToCart(product);
-                }
-            }
-            
-            // Modal add to cart
-            if (e.target.id === 'modalAddToCartBtn') {
-                const productId = e.target.getAttribute('data-product-id');
-                const product = allProducts.find(p => p.id == productId);
-                const quantity = parseInt(modalQuantityInput.value);
-                
-                if (product) {
-                    cartManager.addToCart(product, quantity);
-                    productDetailModal.hide();
-                }
-            }
-            
-            // Product card click - navigates to detail page
-            if (e.target.closest('.product-card-clickable') && !e.target.closest('.product-actions')) {
-                e.preventDefault();
-                const productId = e.target.closest('.product-card-clickable').getAttribute('data-product-id');
-                window.location.href = `product-detail.html?id=${productId}`;
-            }
+      const renderProducts = (products, container) => {
+        container.innerHTML = '';
+        products.forEach(product => {
+          container.innerHTML += createProductCard(product);
         });
+      };
+
+      fetch('products.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          allProducts = data;
+          data.forEach(product => {
+            const container = productContainers[product.category];
+            if (container) {
+              container.innerHTML += createProductCard(product);
+            }
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching products:', error);
+        });
+
+      // Product click events
+      document.addEventListener('click', (e) => {
+        // Quick View button - opens modal
+        if (e.target.classList.contains('view-detail-btn')) {
+          e.preventDefault();
+          const productId = e.target.getAttribute('data-product-id');
+          const product = allProducts.find(p => p.id == productId);
+
+          if (product) {
+            modalProductName.textContent = product.name;
+            modalProductImage.src = product.image;
+            modalProductImage.alt = product.alt_text;
+            modalProductPrice.textContent = `$${product.price.toFixed(2)}`;
+            modalProductDescription.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse eaque wisi molestie, mollis pharetra convallis exercitation, distinctio eu arcu fugit nibh donec exercitationem, quisque imperdiet mattis proident.";
+
+            modalAddToCartBtn.setAttribute('data-product-id', product.id);
+            document.querySelector('.quantity-control .decrease-quantity').setAttribute('data-id', product.id);
+            document.querySelector('.quantity-control .increase-quantity').setAttribute('data-id', product.id);
+            modalQuantityInput.value = 1;
+            productDetailModal.show();
+          }
+        }
+
+        // Add to cart button
+        if (e.target.classList.contains('add-to-cart-btn') || e.target.closest('.add-to-cart-btn')) {
+          e.preventDefault();
+          const productCard = e.target.closest('.product-item');
+          const productId = productCard.getAttribute('data-id');
+          const product = allProducts.find(p => p.id == productId);
+
+          if (product) {
+            cartManager.addToCart(product);
+          }
+        }
+
+        // Modal add to cart
+        if (e.target.id === 'modalAddToCartBtn') {
+          const productId = e.target.getAttribute('data-product-id');
+          const product = allProducts.find(p => p.id == productId);
+          const quantity = parseInt(modalQuantityInput.value);
+
+          if (product) {
+            cartManager.addToCart(product, quantity);
+            productDetailModal.hide();
+          }
+        }
+
+        // Product card click - navigates to detail page
+        if (e.target.closest('.product-card-clickable') && !e.target.closest('.product-actions')) {
+          e.preventDefault();
+          const productId = e.target.closest('.product-card-clickable').getAttribute('data-product-id');
+          window.location.href = `product-detail.html?id=${productId}`;
+        }
+      });
     });
   </script>
 </body>
+
 </html>

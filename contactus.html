@@ -1,524 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Online Furniture Store</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body id="top">
-    <header class="bg-dark text-white">
-      <div class="container-fluid px-5">
-        <div class="d-flex align-items-center py-4">
-          <a href="index.html">
-            <img
-              src="img/kayuu-logo-white.svg"
-              alt="KAYUU logo"
-              style="width: 140px"
-            />
-          </a>
 
-          <nav class="d-none d-lg-block ms-auto">
-            <ul class="list-unstyled d-flex gap-4 m-0">
-              <li>
-                <a href="index.html" class="text-white text-decoration-none"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="product.html" class="text-white text-decoration-none">Products</a>
-              </li>
-              <li>
-                <a href="room.html" class="text-white text-decoration-none">Rooms</a>
-              </li>
-              <li>
-                <a href="aboutus.html" class="text-white text-decoration-none">About Us</a>
-              </li>
-              <li>
-                <a href="contactus.html" class="text-warning text-decoration-none"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Online Furniture Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <div class="cart cart-icon d-none d-lg-block position-relative ms-4">
+<body id="top">
+  <header class="bg-white border-bottom">
+    <div class="container-fluid px-5">
+      <div class="d-flex align-items-center py-4">
+        <a href="index.html">
+          <img src="img/kayuu-logo-dark.svg" alt="KAYUU logo" style="width: 140px" />
+        </a>
+
+        <nav class="d-none d-lg-block ms-auto">
+          <ul class="list-unstyled d-flex gap-4 m-0">
+            <li>
+              <a href="index.html" class="text-muted text-decoration-none">Home</a>
+            </li>
+            <li>
+              <a href="product.html" class="text-muted text-decoration-none">Products</a>
+            </li>
+            <li>
+              <a href="room.html" class="text-muted text-decoration-none">Rooms</a>
+            </li>
+            <li>
+              <a href="aboutus.html" class="text-muted text-decoration-none">About Us</a>
+            </li>
+            <li>
+              <a href="contactus.html" class="text-warning text-decoration-none fw-bold">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="cart cart-icon d-none d-lg-block position-relative ms-4">
+          <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
+          <span
+            class="count cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark">0</span>
+        </div>
+
+        <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
+          <div class="cart-icon position-relative">
             <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
             <span
-              class="count cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning"
-              >0</span
-            >
+              class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-warning text-dark"
+              style="font-size: 0.7rem;">0</span>
           </div>
-
-          <div class="d-lg-none d-flex align-items-center gap-3 ms-auto">
-            <div class="cart-icon position-relative">
-              <i class="fa-solid fa-basket-shopping text-warning fs-4"></i>
-              <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-circle bg-dark text-warning" style="font-size: 0.7rem;">0</span>
-            </div>
-            <button
-              class="btn btn-dark"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-            >
-              <i class="fa-solid fa-bars text-white fs-4"></i>
-            </button>
-          </div>
+          <button class="btn btn-light border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <i class="fa-solid fa-bars text-muted fs-4"></i>
+          </button>
         </div>
-      </div>
-    </header>
-
-    <div
-      class="offcanvas offcanvas-end bg-dark text-white"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button
-          type="button"
-          class="btn-close btn-close-white"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a
-              class="nav-link text-white"
-              href="index.html"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="room.html">Rooms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-warning" aria-current="page" href="contactus.html">Contact Us</a>
-          </li>
-        </ul>
       </div>
     </div>
+  </header>
 
-    <main>
-      <section class="bg-light text-center py-5">
-        <div class="container py-5">
-          <h1 class="display-3 fw-bold mb-3">Contact Us</h1>
-          <p class="lead text-secondary mx-auto" style="max-width: 800px">
-            Tempus amet, sit erat malesuada lorem purus dictum pretium, posuere
-            sagittis ultricies enim massa nisi neque augue in condimentum diam
-            commodo ornare.
-          </p>
-        </div>
-      </section>
+  <div class="offcanvas offcanvas-end bg-white" tabindex="-1" id="offcanvasNavbar"
+    aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title text-dark" id="offcanvasNavbarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="room.html">Rooms</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-warning fw-bold" aria-current="page" href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-      <section class="bg-white py-5">
-        <div class="container py-5">
-          <div class="row g-5 justify-content-center">
-            <div class="col-12 col-lg-6 text-center text-lg-start">
-              <div class="d-flex align-items-start gap-3">
-                <i class="fa-solid fa-location-dot text-warning fs-3 mt-1"></i>
-                <div>
-                  <span class="text-warning text-uppercase fw-bold d-block mb-1"
-                    >Our Store</span
-                  >
-                  <h3 class="fs-5 fw-bold text-dark">
-                    3538 Torrance Blvd, Torrance, CA 90503, USA
+  <main>
+    <section class="bg-white text-center py-5">
+      <div class="container py-5">
+        <h1 class="display-3 fw-bold mb-3">Contact Us</h1>
+        <p class="lead text-secondary mx-auto" style="max-width: 800px">
+          Tempus amet, sit erat malesuada lorem purus dictum pretium, posuere
+          sagittis ultricies enim massa nisi neque augue in condimentum diam
+          commodo ornare.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-white py-5">
+      <div class="container py-5">
+        <div class="row g-5 justify-content-center">
+          <div class="col-12 col-lg-6 text-center text-lg-start">
+            <div class="d-flex align-items-start gap-3">
+              <i class="fa-solid fa-location-dot text-warning fs-3 mt-1"></i>
+              <div>
+                <span class="text-warning text-uppercase fw-bold d-block mb-1">Our Store</span>
+                <h3 class="fs-5 fw-bold text-dark">
+                  3538 Torrance Blvd, Torrance, CA 90503, USA
+                </h3>
+              </div>
+            </div>
+            <p class="text-secondary my-4 mx-auto mx-lg-0" style="max-width: 600px">
+              Posuere sagittis ultricies enim massa nisi neque augue in
+              condimentum lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+              dapibus leo.
+            </p>
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4">
+              <div class="d-flex gap-2">
+                <a href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"><i
+                    class="fab fa-twitter"></i></a>
+                <a href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"><i
+                    class="fab fa-youtube"></i></a>
+                <a href="#"
+                  class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"><i
+                    class="fab fa-instagram"></i></a>
+              </div>
+              <a href="#" class="d-flex align-items-center gap-2 text-decoration-none fw-bold text-dark get-direction">
+                <i class="fa-solid fa-paper-plane text-warning"></i>
+                GET DIRECTION
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="row g-4">
+              <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="d-flex flex-column align-items-center align-items-md-start">
+                  <i class="fa-solid fa-phone text-warning fs-3 mb-2"></i>
+                  <span class="text-warning text-uppercase fw-bold d-block">Call Us</span>
+                  <h3 class="fs-6 fw-bold text-dark mb-0">+1 123 456 7890</h3>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="d-flex flex-column align-items-center align-items-md-start">
+                  <i class="fa-solid fa-headphones-simple text-warning fs-3 mb-2"></i>
+                  <span class="text-warning text-uppercase fw-bold d-block">Support</span>
+                  <h3 class="fs-6 fw-bold text-dark mb-0">
+                    support@email.com
                   </h3>
                 </div>
               </div>
-              <p
-                class="text-secondary my-4 mx-auto mx-lg-0"
-                style="max-width: 600px"
-              >
-                Posuere sagittis ultricies enim massa nisi neque augue in
-                condimentum lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
-                dapibus leo.
-              </p>
-              <div
-                class="d-flex align-items-center justify-content-center justify-content-lg-start gap-4"
-              >
-                <div class="d-flex gap-2">
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"
-                    ><i class="fab fa-facebook-f"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"
-                    ><i class="fab fa-youtube"></i
-                  ></a>
-                  <a
-                    href="#"
-                    class="d-flex align-items-center justify-content-center rounded-circle bg-light text-dark shadow-sm social-icon-link"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
+              <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="d-flex flex-column align-items-center align-items-md-start">
+                  <i class="fa-solid fa-gem text-warning fs-3 mb-2"></i>
+                  <span class="text-warning text-uppercase fw-bold d-block">Sales</span>
+                  <h3 class="fs-6 fw-bold text-dark mb-0">sales@email.com</h3>
                 </div>
-                <a
-                  href="#"
-                  class="d-flex align-items-center gap-2 text-decoration-none fw-bold text-dark get-direction"
-                >
-                  <i class="fa-solid fa-paper-plane text-warning"></i>
-                  GET DIRECTION
-                </a>
               </div>
-            </div>
-
-            <div class="col-12 col-lg-6">
-              <div class="row g-4">
-                <div class="col-12 col-md-6 text-center text-md-start">
-                  <div
-                    class="d-flex flex-column align-items-center align-items-md-start"
-                  >
-                    <i class="fa-solid fa-phone text-warning fs-3 mb-2"></i>
-                    <span class="text-warning text-uppercase fw-bold d-block"
-                      >Call Us</span
-                    >
-                    <h3 class="fs-6 fw-bold text-dark mb-0">+1 123 456 7890</h3>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-start">
-                  <div
-                    class="d-flex flex-column align-items-center align-items-md-start"
-                  >
-                    <i
-                      class="fa-solid fa-headphones-simple text-warning fs-3 mb-2"
-                    ></i>
-                    <span class="text-warning text-uppercase fw-bold d-block"
-                      >Support</span
-                    >
-                    <h3 class="fs-6 fw-bold text-dark mb-0">
-                      support@email.com
-                    </h3>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-start">
-                  <div
-                    class="d-flex flex-column align-items-center align-items-md-start"
-                  >
-                    <i class="fa-solid fa-gem text-warning fs-3 mb-2"></i>
-                    <span class="text-warning text-uppercase fw-bold d-block"
-                      >Sales</span
-                    >
-                    <h3 class="fs-6 fw-bold text-dark mb-0">sales@email.com</h3>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-start">
-                  <div
-                    class="d-flex flex-column align-items-center align-items-md-start"
-                  >
-                    <i
-                      class="fa-solid fa-shield-alt text-warning fs-3 mb-2"
-                    ></i>
-                    <span class="text-warning text-uppercase fw-bold d-block"
-                      >Complaints</span
-                    >
-                    <h3 class="fs-6 fw-bold text-dark mb-0">
-                      complaints@email.com
-                    </h3>
-                  </div>
+              <div class="col-12 col-md-6 text-center text-md-start">
+                <div class="d-flex flex-column align-items-center align-items-md-start">
+                  <i class="fa-solid fa-shield-alt text-warning fs-3 mb-2"></i>
+                  <span class="text-warning text-uppercase fw-bold d-block">Complaints</span>
+                  <h3 class="fs-6 fw-bold text-dark mb-0">
+                    complaints@email.com
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="contact-form py-5">
-        <div class="container-fluid py-5">
-          <div class="row g-0 rounded shadow overflow-hidden">
-            <div class="col-12 col-lg-6 map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.2036034151736!2d-118.33400762410714!3d33.98701987317789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b53589b3524b%3A0x8e87d00f808779c!2s3538%20Torrance%20Blvd%2C%20Torrance%2C%20CA%2090503%2C%20USA!5e0!3m2!1sen!2sin!4v1660144558509!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                title="Location of KAYUU Furniture Store on Google Maps"
-              ></iframe>
-            </div>
-            <div class="col-12 col-lg-6 p-4 p-md-5 d-flex align-items-center">
-              <div class="form-wrapper w-100">
-                <h2 class="display-6 fw-bold mb-4">Send Us A Message</h2>
-                <form action="#" method="post">
-                  <div class="mb-3">
-                    <label
-                      for="name"
-                      class="form-label text-warning fw-bold d-block"
-                      >Name <span class="text-danger">*</span></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control rounded-2 py-2"
-                      id="name"
-                      name="name"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label
-                      for="email"
-                      class="form-label text-warning fw-bold d-block"
-                      >Email <span class="text-danger">*</span></label
-                    >
-                    <input
-                      type="email"
-                      class="form-control rounded-2 py-2"
-                      id="email"
-                      name="email"
-                      required
-                    />
-                  </div>
-                  <div class="mb-4">
-                    <label
-                      for="message"
-                      class="form-label text-warning fw-bold d-block"
-                      >Message <span class="text-danger">*</span></label
-                    >
-                    <textarea
-                      class="form-control rounded-2 py-2"
-                      id="message"
-                      name="message"
-                      rows="5"
-                      required
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-warning py-3 px-5 fw-bold w-100"
-                  >
-                    SUBMIT
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="newsletter-promo py-5 bg-light">
-        <div class="container rounded shadow-sm bg-white overflow-hidden p-0">
-          <div class="row g-0">
-            <div class="col-12 col-lg-6">
-              <div class="promo-image h-100">
-                <img
-                  src="img/newsletter-banner-img.jpg"
-                  class="img-fluid w-100 h-100 object-fit-cover"
-                  alt="Person relaxing on a couch"
-                />
-              </div>
-            </div>
-            <div
-              class="col-12 col-lg-6 d-flex flex-column justify-content-center p-5 text-center text-lg-start"
-            >
-              <span
-                class="tag text-uppercase text-warning fw-bold d-block mb-3"
-              >
-                SUBSCRIBE TO OUR NEWSLETTER
-              </span>
-              <h2 class="display-5 fw-bold mb-4">
-                See The Latest Collection & Get Special Offer
-              </h2>
-              <form
-                action="#"
-                method="post"
-                class="newsletter-form d-flex flex-column flex-sm-row"
-              >
-                <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control rounded-2 py-3"
-                    placeholder="Email address"
-                    required
-                  />
-                </div>
-                <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">
-                  SUBSCRIBE
-                </button>
-              </form>
-              <p class="mt-3 text-secondary">
-                Cras interdum lectus velit nibh senectus fringilla ut.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <div id="shopping-cart-popup" class="shopping-cart-popup">
-        <div class="cart-header">
-            <h4>Shopping Cart</h4>
-            <button id="close-cart-btn" class="btn-close" aria-label="Close"></button>
-        </div>
-        <div class="cart-items-container" id="popup-cart-items">
-            <div class="empty-cart text-center py-4">
-                <i class="fas fa-shopping-cart text-muted mb-3" style="font-size: 3rem;"></i>
-                <p class="text-muted">Your cart is empty</p>
-            </div>
-        </div>
-        <div class="cart-footer">
-            <div class="d-flex justify-content-between align-items-center mb-3">
-                <h5 class="fw-semibold">Subtotal:</h5>
-                <h5 id="cart-subtotal" class="fw-bold">$0.00</h5>
-            </div>
-            <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold">VIEW CART</a>
-            <a href="checkout.html" class="btn btn-dark w-100 fw-bold">CHECKOUT</a>
-        </div>
-    </div>
-
-    <div id="add-to-cart-notification" class="add-to-cart-notification"></div>
-
-    <footer class="bg-dark text-white py-5">
-      <div class="container">
-        <div class="row g-4 pb-4 border-bottom border-secondary">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="footer-info text-center text-lg-start">
-              <a href="index.html" class="logo d-block mb-3">
-                <img
-                  src="img/kayuu-logo-white.svg"
-                  alt="KAYUU logo"
-                  style="width: 140px"
-                />
-              </a>
-              <p class="text-secondary mb-1">
-                3538 Torrance Blvd, Torrance, CA 90503, USA
-              </p>
-              <p class="text-secondary mb-1">+1 123 456 7890</p>
-              <p class="text-secondary mb-1">info@example.com</p>
-              <a
-                href="#"
-                class="store-link text-warning d-inline-block mt-3 fw-bold"
-                >Visit Our Store</a
-              >
-            </div>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="fs-5 fw-bold text-uppercase mb-3">Useful Links</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="index.html" class="text-secondary text-decoration-none">Home</a>
-              </li>
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Products</a
-                >
-              </li>
-              <li>
-                <a href="room.html" class="text-secondary text-decoration-none">Rooms</a>
-              </li>
-              <li>
-                <a href="aboutus.html" class="text-secondary text-decoration-none"
-                  >About Us</a
-                >
-              </li>
-              <li>
-                <a href="contactus.html" class="text-secondary text-decoration-none"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="fs-5 fw-bold text-uppercase mb-3">Rooms</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Living Room</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Bedroom</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Kitchen</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Bath Room</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-secondary text-decoration-none"
-                  >Home Office</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="footer-social text-center text-lg-start">
-              <h5 class="fs-5 fw-bold text-uppercase mb-3">Stay In Touch</h5>
-              <p class="text-secondary mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <div
-                class="social-icons d-flex justify-content-center justify-content-lg-start gap-2"
-              >
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"
-                  ><i class="fa-brands fa-facebook-f"></i
-                ></a>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"
-                  ><i class="fa-brands fa-twitter"></i
-                ></a>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"
-                  ><i class="fa-brands fa-youtube"></i
-                ></a>
-                <a
-                  href="#"
-                  class="d-flex align-items-center justify-content-center rounded-circle bg-secondary bg-opacity-25 text-white social-icon-link"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 text-center text-secondary"
-        >
-          <p class="mb-0">Copyright © 2025 Online Furniture Store</p>
-          <p class="mb-0">Powered by Online Furniture Store</p>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="cart-common.js"></script>
-    <script src="cart.js"></script>
-  </body>
+    <section class="contact-form py-5 bg-white">
+      <div class="container-fluid py-5">
+        <div class="row g-0 rounded shadow overflow-hidden">
+          <div class="col-12 col-lg-6 map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.2036034151736!2d-118.33400762410714!3d33.98701987317789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b53589b3524b%3A0x8e87d00f808779c!2s3538%20Torrance%20Blvd%2C%20Torrance%2C%20CA%2090503%2C%20USA!5e0!3m2!1sen!2sin!4v1660144558509!5m2!1sen!2sin"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Location of KAYUU Furniture Store on Google Maps"></iframe>
+          </div>
+          <div class="col-12 col-lg-6 p-4 p-md-5 d-flex align-items-center">
+            <div class="form-wrapper w-100">
+              <h2 class="display-6 fw-bold mb-4">Send Us A Message</h2>
+              <form action="#" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label text-warning fw-bold d-block">Name <span
+                      class="text-danger">*</span></label>
+                  <input type="text" class="form-control rounded-2 py-2" id="name" name="name" required />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-warning fw-bold d-block">Email <span
+                      class="text-danger">*</span></label>
+                  <input type="email" class="form-control rounded-2 py-2" id="email" name="email" required />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="form-label text-warning fw-bold d-block">Message <span
+                      class="text-danger">*</span></label>
+                  <textarea class="form-control rounded-2 py-2" id="message" name="message" rows="5"
+                    required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning py-3 px-5 fw-bold w-100">
+                  SUBMIT
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-promo py-5 bg-white">
+      <div class="container rounded shadow-sm bg-white overflow-hidden p-0">
+        <div class="row g-0">
+          <div class="col-12 col-lg-6">
+            <div class="promo-image h-100">
+              <img src="img/newsletter-banner-img.jpg" class="img-fluid w-100 h-100 object-fit-cover"
+                alt="Person relaxing on a couch" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column justify-content-center p-5 text-center text-lg-start">
+            <span class="tag text-uppercase text-warning fw-bold d-block mb-3">
+              SUBSCRIBE TO OUR NEWSLETTER
+            </span>
+            <h2 class="display-5 fw-bold mb-4">
+              See The Latest Collection & Get Special Offer
+            </h2>
+            <form action="#" method="post" class="newsletter-form d-flex flex-column flex-sm-row">
+              <div class="flex-grow-1 mb-3 mb-sm-0 me-sm-2">
+                <input type="email" name="email" class="form-control rounded-2 py-3" placeholder="Email address"
+                  required />
+              </div>
+              <button type="submit" class="btn btn-warning py-3 px-4 fw-bold">
+                SUBSCRIBE
+              </button>
+            </form>
+            <p class="mt-3 text-secondary">
+              Cras interdum lectus velit nibh senectus fringilla ut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="shopping-cart-popup" class="shopping-cart-popup">
+    <div class="cart-header">
+      <h4>Shopping Cart</h4>
+      <button id="close-cart-btn" class="btn-close" aria-label="Close"></button>
+    </div>
+    <div class="cart-items-container" id="popup-cart-items">
+      <div class="empty-cart text-center py-4">
+        <i class="fas fa-shopping-cart text-muted mb-3" style="font-size: 3rem;"></i>
+        <p class="text-muted">Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="fw-semibold">Subtotal:</h5>
+        <h5 id="cart-subtotal" class="fw-bold">$0.00</h5>
+      </div>
+      <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold">VIEW CART</a>
+      <a href="checkout.html" class="btn btn-dark w-100 fw-bold">CHECKOUT</a>
+    </div>
+  </div>
+
+  <div id="add-to-cart-notification" class="add-to-cart-notification"></div>
+
+  <footer style="background-color: #000000; color: #ffffff; padding: 40px 20px;">
+    <div class="container-fluid">
+      <div class="row justify-content-between" style="padding-bottom: 25px; margin-bottom: 20px;">
+        <div class="col-lg-3 col-md-6 mb-3" style="padding-left: 20px; padding-right: 20px;"> <img
+            src="img/kayuu-logo-white.svg" alt="KAYUU" style="width: 100px; margin-bottom: 15px;" />
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">3538 Torrance Blvd,
+            Torrance, CA 90503, USA</p>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 5px;">+1 123 456 7890</p>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 10px;">info@example.com</p> <a
+            href="#" style="color: #cccccc; font-size: 14px; font-weight: 600; text-decoration: none;">Visit Our
+            Store</a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 80px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Useful Links</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 6px;"><a href="index.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home</a></li>
+            <li style="margin-bottom: 6px;"><a href="product.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Products</a></li>
+            <li style="margin-bottom: 6px;"><a href="room.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Rooms</a></li>
+            <li style="margin-bottom: 6px;"><a href="aboutus.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">About Us</a></li>
+            <li style="margin-bottom: 6px;"><a href="contactus.html"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6 mb-3" style="padding-left: 60px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Rooms</h5>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Living Room</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bedroom</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Kitchen</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Bath Room</a></li>
+            <li style="margin-bottom: 6px;"><a href="#"
+                style="color: #cccccc; font-size: 14px; text-decoration: none;">Home Office</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-3" style="padding-left: 100px; padding-right: 20px;">
+          <h5 style="color: #ffffff; font-size: 16px; font-weight: 600; margin-bottom: 15px;">Stay In Touch</h5>
+          <p style="color: #cccccc; font-size: 14px; line-height: 1.6; margin-bottom: 15px; max-width: 300px;">Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div style="display: flex; gap: 15px;"> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-facebook-f"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-twitter"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-youtube"></i></a> <a href="#" style="color: #cccccc; font-size: 18px;"><i
+                class="fa-brands fa-instagram"></i></a> </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="border-top: 1px solid #444; margin: 20px 0 0 0; padding-top: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; text-align: center;">
+      <p style="color: #cccccc; font-size: 14px; margin: 0;">Copyright © 2025 Online Furniture Store</p>
+      <p style="color: #cccccc; font-size: 14px; margin: 0;">Powered by Online Furniture Store</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cart-common.js"></script>
+  <script src="cart.js"></script>
+</body>
+
 </html>
